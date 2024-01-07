@@ -1,3 +1,4 @@
+import { CheckingForBundle } from "./another";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // const App = React.createElement(
 //   "h1",
@@ -6,11 +7,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // );
 
 const App = () => {
-  return (
-    <div>
-      <h2>Amar sonar bangla</h2>
-    </div>
-  );
+  {
+    return React.createElement(
+      "div",
+      null,
+      "this is div",
+      CheckingForBundle()
+    );
+  }
 };
 
 root.render(<App />);
