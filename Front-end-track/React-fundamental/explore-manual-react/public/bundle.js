@@ -7957,4 +7957,5 @@ const App = () => {
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Name, null), /*#__PURE__*/React.createElement(CheckingForBundle, null));
 };
 
-client.createRoot(document.getElementById("root")).render(App());
+const root = client.createRoot(document.getElementById("root"));
+root.render(App());
