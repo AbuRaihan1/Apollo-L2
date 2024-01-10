@@ -23,3 +23,6 @@ For Front-end:
 2. React
 3. Next.js
 4. Redux
+5. javaScript 
+6. Material-ui 
+7. Tailwindcss
