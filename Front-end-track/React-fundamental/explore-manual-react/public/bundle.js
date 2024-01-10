@@ -2,6 +2,12 @@ function getDefaultExportFromCjs (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
 
+var client = {};
+
+var reactDom = {exports: {}};
+
+var reactDom_development = {};
+
 var react = {exports: {}};
 
 var react_development = {exports: {}};
@@ -2417,12 +2423,6 @@ function requireReact_development () {
 
 var reactExports = react.exports;
 var React = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
-
-var client = {};
-
-var reactDom = {exports: {}};
-
-var reactDom_development = {};
 
 var scheduler = {exports: {}};
 
@@ -7946,20 +7946,15 @@ var m = reactDomExports;
 }
 
 const CheckingForBundle = () => {
-  return /*#__PURE__*/React.createElement("p", null, "checking another file for bundling");
+  return /*#__PURE__*/React.createElement("div", null, "this is another file");
 };
 
 const Name = () => {
-  return /*#__PURE__*/React.createElement("h1", {
-    color: "red"
-  }, "This is name");
+  return /*#__PURE__*/React.createElement("div", null, "This is name option");
 };
 
 const App = () => {
-  {
-    return /*#__PURE__*/React.createElement("div", null, "This is div", CheckingForBundle(), Name());
-  }
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Name, null), /*#__PURE__*/React.createElement(CheckingForBundle, null));
 };
 
-// root.render(<App />);
 client.createRoot(document.getElementById("root")).render(App());

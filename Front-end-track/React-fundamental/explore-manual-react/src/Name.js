@@ -1,4 +1,4 @@
 import React from "react";
 export const Name = () => {
-  return React.createElement("h1", { color: "red" }, "This is name");
+  return <div>This is name option</div>;
 };
